@@ -28,6 +28,7 @@ function updateInventory() {
         stock--;
         updateInventory();
     });
+    updateInventory()
 
 //Task 4: Create a Checkout Event 
 purchaseButton.addEventListener("click",() => {
