@@ -10,3 +10,20 @@ const purchaseButton = document.getElementById("purchase-product")
 purchaseButton.addEventListener("click", () => {
  purchaseButton.textContent = "Product Purchased!";
 });
+
+//Task 3: Handle stock availability and disable purchase button when out of stock
+let stock = 5
+inventoryCount = document.getElementById("inventory-count")
+function updateInventory() {
+        if (stock > 0) {
+            purchaseButton.disabled = false;
+            inventoryCount.textContent = `In Stock: ${stock}`;
+        } else {
+        priceElement.disabled = true;
+    inventoryCount.textContent = "Out of Stock";
+        }
+    }
+    purchaseButton.addEventListener("click", () => {
+        stock--;
+        updateInventory();
+    });
