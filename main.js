@@ -1,5 +1,6 @@
 //Task 2: Add Event Listeners for Product Selection 
 const priceElement = document.getElementById("product-price");
+const productName = document.getElementById("product-name")
 const sizeSelector = document.getElementById("size-selector");
 
 sizeSelector.addEventListener("change", (event) => {
@@ -8,7 +9,7 @@ sizeSelector.addEventListener("change", (event) => {
 });
 const purchaseButton = document.getElementById("purchase-product")
 purchaseButton.addEventListener("click", () => {
- purchaseButton.textContent = "Product Purchased!";
+ purchaseButton.textContent = "Purchase";
 });
 
 //Task 3: Handle stock availability and disable purchase button when out of stock
