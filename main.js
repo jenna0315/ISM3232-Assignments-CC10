@@ -27,3 +27,14 @@ function updateInventory() {
         stock--;
         updateInventory();
     });
+
+//Task 4: Create a Checkout Event 
+purchaseButton.addEventListener("click",() => {
+    if (purchaseButton.disabled = false){
+        alert('Thank you for your purchase!')
+    } else {
+        alert('Sorry, this product is currently out of stock and cannot be purchased.');
+    }
+});
+
+    
